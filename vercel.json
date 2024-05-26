@@ -2,7 +2,7 @@
 	"version": 2,
 	"builds": [
 		{
-			"src": "package.json",
+			"src": "packages/cli/package.json",
 			"use": "@vercel/node",
 			"config": { "distDir": "dist" }
 		}
@@ -12,5 +12,6 @@
 			"src": "/(.*)",
 			"dest": "/public/$1"
 		}
-	]
+	],
+	"outputDirectory": "packages/cli/dist"
 }
