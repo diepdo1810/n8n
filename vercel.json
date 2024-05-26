@@ -13,5 +13,5 @@
 			"dest": "/public/$1"
 		}
 	],
-	"outputDirectory": "packages/cli/dist"
+	"outputDirectory": "dist"
 }
