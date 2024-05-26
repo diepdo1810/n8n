@@ -4,14 +4,15 @@
 		{
 			"src": "packages/cli/package.json",
 			"use": "@vercel/node",
-			"config": { "distDir": "dist" }
+			"config": {
+				"distDir": "packages/cli/dist"
+			}
 		}
 	],
 	"routes": [
 		{
 			"src": "/(.*)",
-			"dest": "/public/$1"
+			"dest": "packages/cli/dist/$1"
 		}
-	],
-	"outputDirectory": "dist"
+	]
 }
