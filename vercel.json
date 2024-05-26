@@ -2,8 +2,9 @@
 	"version": 2,
 	"builds": [
 		{
-			"src": "packages/cli/package.json",
-			"use": "@vercel/node"
+			"src": "package.json",
+			"use": "@vercel/node",
+			"config": { "distDir": "dist" }
 		}
 	],
 	"routes": [
@@ -11,6 +12,5 @@
 			"src": "/(.*)",
 			"dest": "/public/$1"
 		}
-	],
-	"outputDirectory": "packages/cli/dist"
+	]
 }
