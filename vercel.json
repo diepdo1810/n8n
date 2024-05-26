@@ -14,5 +14,6 @@
 			"src": "/(.*)",
 			"dest": "packages/cli/dist/$1"
 		}
-	]
+	],
+	"outputDirectory": "dist"
 }
